@@ -8,6 +8,7 @@ class Api::ContactsController < ApplicationController
     @contact = Contact.new(
                             first_name: params[:first_name],
                             last_name: params[:last_name],
+                            middle_name: params[:middle_name],
                             email: params[:email],
                             phone_number: params[:phone_number]
                           )
