@@ -1,7 +1,12 @@
 class Api::ContactsController < ApplicationController
   
   def index
+
     @contacts = Contact.all
+
+    if current_user
+      p current_user
+    end
 
 
 
